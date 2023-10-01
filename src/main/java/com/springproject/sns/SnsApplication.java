@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)   // datasource 설정 이전에 run할 경우 추가
+@SpringBootApplication
 public class SnsApplication {
 
 	public static void main(String[] args) {
@@ -12,3 +12,5 @@ public class SnsApplication {
 	}
 
 }
+
+//(exclude = DataSourceAutoConfiguration.class)   // datasource 설정 이전에 run할 경우 추가

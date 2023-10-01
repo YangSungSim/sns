@@ -272,6 +272,9 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
+# env
+**/src/main/resources/env.properties
+
 # Eclipse Gradle plugin generated files
 # Eclipse Core
 .project

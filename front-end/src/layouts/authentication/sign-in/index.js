@@ -90,9 +90,9 @@ function Basic() {
       url: '/api/v1/users/login',
       method: 'POST',
       data: {
-        name: userName,
+        userName: userName,
         password: password,
-      },
+      }
     })
       .then((res) => {
         console.log('success');
