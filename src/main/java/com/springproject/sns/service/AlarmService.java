@@ -40,7 +40,7 @@ public class AlarmService {
                                 .name(ALARM_NAME)
                                 .data(new AlarmNoti()));
                     } catch (IOException exception) {
-                        emitterRepository.delete(receiverId);
+                        emitterRepository.delete(receiverId); // 에러가 난 경우 userId를 더이상 캐시에 들고 있을 필요가 없어지므로 delete
                         throw new SimpleSnsApplicationException(ErrorCode.NOTIFICATION_CONNECT_ERROR);
                     }
                 },

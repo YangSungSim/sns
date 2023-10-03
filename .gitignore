@@ -263,7 +263,7 @@ replay_pid*
 # Ignore Gradle GUI config
 gradle-app.setting
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually5 ignored)
 !gradle-wrapper.jar
 
 # Avoid ignore Gradle wrappper properties

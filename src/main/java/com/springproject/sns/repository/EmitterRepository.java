@@ -28,6 +28,7 @@ public class EmitterRepository {
         emitterMap.remove(getKey(userId));
     }
 
+    // userId 가 null 일 수 있으므로 optional 사용
     public Optional<SseEmitter> get(Integer userId) {
         SseEmitter result = emitterMap.get(getKey(userId));
         log.info("Get Emitter from Redis {}", result);

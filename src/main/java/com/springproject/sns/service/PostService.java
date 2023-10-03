@@ -74,8 +74,6 @@ public class PostService {
 
         commentEntityRepository.save(CommentEntity.of(comment, postEntity, userEntity));
 
-        // AlarmType alarmType, AlarmArgs args, UserEntity user
-        alarmEntityRepository.save(AlarmEntity.of(AlarmType.NEW_COMMENT_ON_POST, new AlarmArgs(userEntity.getId(), postEntity.getId()), postEntity.getUser()));
         // create alarm
         //alarmProducer.send(new AlarmEvent(AlarmType.NEW_COMMENT_ON_POST, new AlarmArgs(userEntity.getId(), postId), postEntity.getUser().getId()));
     }
@@ -96,8 +94,6 @@ public class PostService {
         });
 
         likeEntityRepository.save(LikeEntity.of(postEntity, userEntity));
-
-        alarmEntityRepository.save(AlarmEntity.of(AlarmType.NEW_LIKE_ON_POST, new AlarmArgs(userEntity.getId(), postEntity.getId()), postEntity.getUser()));
 
         // create alarm
         //alarmProducer.send(new AlarmEvent(AlarmType.NEW_LIKE_ON_POST, new AlarmArgs(userEntity.getId(), postId), postEntity.getUser().getId()));
