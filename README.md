@@ -6,3 +6,5 @@
 #### sprngboot 3버전으로 upgrade하면서 build.gradle 에서 더이상 사용할 수없는 라이브러리를 // 이전 으로 주석처리 후 하단에 버전에 맞는 라이브러리 추가
 #### 1.@Type 어노테이션 사용 변경에 따라 수정
 #### 2.filterchain 수정
+======
+#### 1. heroky kafka add-on free service 사용 불가.
