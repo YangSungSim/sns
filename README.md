@@ -8,3 +8,24 @@
 #### 2.filterchain 수정
 ======
 #### 1. heroky kafka add-on free service 사용 불가.
+
+
+ heroku upate
+ heroku plugins:install heroku-kafka
+ heroku config:get KAFKA_URL
+ heroku kafka:info
+ heroku kafka:credentials --reset --app fsimmy-sns
+ heroku kafka:credentials --help
+ heroku kafka --help
+ heroku kafka:info --app fsimmy-sns
+ heroku kafka:topics:create messages --app fsimmy-sns
+ heroku kafka:consumer-groups:create demo-group --app fsimmy-sns
+ git push heroku master
+ heroku  open --app fsimmy-sns
+ heroku config --help
+ heroku config:get --help
+ heroku config:get KEY --app fsimmy-sns
+ heroku config:get KAFKA_URL --app fsimmy-sns
+ heroku config:get KAFKA_TRUSTED_CERT --app fsimmy-sns
+ heroku config:get KAFKA_CLIENT_CERT_KEY --app fsimmy-sns
+ heroku config:get KAFKA_CLIENT_CERT --app fsimmy-sns
